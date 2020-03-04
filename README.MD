@@ -7,7 +7,7 @@ Demo
 -------
 https://youtu.be/0IcA2wXuteI
 
-Releases
+Releases (Binaries)
 -------
 https://github.com/sunw4r/signalboy/releases
 
