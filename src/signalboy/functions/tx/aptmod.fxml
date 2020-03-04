@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import signalboy.custom.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signalboy.functions.tx.APTMod">
+   <children>
+      <Button fx:id="buttonPickImage" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Pick Image" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Button fx:id="buttonModulate" layoutX="10.0" layoutY="48.0" mnemonicParsing="false" text="Start Modulation" AnchorPane.leftAnchor="10.0" />
+      <ScrollPane layoutY="85.0" prefHeight="305.0" prefWidth="580.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="85.0">
+         <content>
+             <ResizableCanvas fx:id="canvasBitmap" height="200.0" width="2080.0" />
+         </content>
+      </ScrollPane>
+      <CheckBox fx:id="checkBoxSyncTrain" layoutX="93.0" layoutY="14.0" mnemonicParsing="false" selected="true" text="Add Sync Train" />
+   </children>
+
+   <stylesheets>
+      <URL value="@../../dark.css" />
+   </stylesheets>
+
+</AnchorPane>

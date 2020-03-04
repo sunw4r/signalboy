@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import signalboy.custom.ResizableCanvas?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="700.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signalboy.functions.rx.SignalAnalyst">
+   <children>
+      <ResizableCanvas fx:id="canvasBitmap" height="435.0" width="800.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <ToggleButton layoutX="821.0" layoutY="14.0" mnemonicParsing="false" text="FFT" />
+   </children>
+
+   <stylesheets>
+      <URL value="@../../dark.css" />
+   </stylesheets>
+
+</AnchorPane>

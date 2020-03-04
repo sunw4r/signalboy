@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import signalboy.custom.*?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signalboy.functions.rx.APRSAX25Demod">
+   <children>
+      <ResizableCanvas fx:id="canvasSpace" height="64.0" layoutX="14.0" layoutY="161.0" width="800.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="161.0" />
+      <ResizableCanvas fx:id="canvasSignal" height="64.0" layoutX="14.0" layoutY="11.0" width="800.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="11.0" />
+      <ResizableCanvas fx:id="canvasMark" height="64.0" layoutX="14.0" layoutY="86.0" width="800.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="86.0" />
+      <Button fx:id="buttonUpdate" layoutX="14.0" layoutY="356.0" mnemonicParsing="false" text="Update Detection Frequencies" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="356.0" />
+      <TextField fx:id="textFieldSpace" layoutX="14.0" layoutY="285.0" text="2200" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="285.0" />
+      <Label layoutX="189.0" layoutY="290.0" text="Space (Hz)" AnchorPane.leftAnchor="189.0" AnchorPane.topAnchor="290.0" />
+      <TextField fx:id="textFieldMark" layoutX="14.0" layoutY="249.0" text="1200" />
+      <Label layoutX="189.0" layoutY="254.0" text="Mark (Hz)" />
+      <TextArea fx:id="textAreaMessage" layoutX="14.0" layoutY="410.0" prefHeight="271.0" prefWidth="572.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="415.0" />
+      <TextField fx:id="textFieldBaud" layoutX="14.0" layoutY="320.0" text="1200" />
+      <Label layoutX="189.0" layoutY="325.0" text="Baud" />
+      <Label fx:id="labelResumeFreq" layoutX="14.0" layoutY="393.0" prefHeight="17.0" prefWidth="418.0" text="Mark: 1200 hz | Space: 2200 hz | Baud: 1200" textFill="#807f7f" />
+   </children>
+
+   <stylesheets>
+      <URL value="@../../dark.css" />
+   </stylesheets>
+
+</AnchorPane>

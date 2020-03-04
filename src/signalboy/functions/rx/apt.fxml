@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import signalboy.custom.*?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signalboy.functions.rx.APTDemod">
+   <children>
+      <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Capture">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="680.0" prefWidth="459.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <content>
+                              <ResizableCanvas fx:id="canvasBitmap" height="200.0" width="600.0" />
+                           </content>
+                        </ScrollPane>
+                        <Button fx:id="processButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Start Capturing" />
+                        <Button fx:id="saveRawImageButton" disable="true" layoutX="14.0" layoutY="53.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Save Raw Image" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="False Color (testing)">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutX="137.0" prefHeight="680.0" prefWidth="424.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <content>
+                              <ResizableCanvas fx:id="canvasProcess" height="200.0" layoutX="200.0" width="600.0" />
+                           </content>
+                        </ScrollPane>
+                         <Button fx:id="saveColoredImageButton" disable="true" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Save Color Image" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+
+    <stylesheets>
+        <URL value="@../../dark.css" />
+    </stylesheets>
+
+</AnchorPane>

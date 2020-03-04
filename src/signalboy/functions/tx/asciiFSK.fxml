@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signalboy.functions.tx.AsciiFSKMod">
+   <children>
+      <Button fx:id="buttonSend" layoutX="10.0" layoutY="305.0" mnemonicParsing="false" text="Send" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="305.0" />
+      <TextField fx:id="textFieldSpace" text="2200" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0" />
+      <Label layoutX="185.0" layoutY="55.0" text="Space (Hz)" AnchorPane.leftAnchor="185.0" AnchorPane.topAnchor="55.0" />
+      <TextField fx:id="textFieldMark" layoutX="10.0" layoutY="14.0" text="1200" />
+      <Label layoutX="185.0" layoutY="19.0" text="Mark (Hz)" />
+      <TextArea fx:id="textAreaMessage" layoutX="10.0" layoutY="125.0" prefHeight="174.0" prefWidth="580.0" wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <TextField fx:id="textFieldBaud" layoutX="10.0" layoutY="85.0" text="1200" />
+      <Label layoutX="185.0" layoutY="90.0" text="Baud" />
+      <TextArea fx:id="textAreaBinary" editable="false" layoutX="10.0" layoutY="359.0" prefHeight="93.0" prefWidth="418.0" wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Label layoutX="10.0" layoutY="342.0" text="Binary" textFill="#868686" />
+   </children>
+
+   <stylesheets>
+      <URL value="@../../dark.css" />
+   </stylesheets>
+
+</AnchorPane>

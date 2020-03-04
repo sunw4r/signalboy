@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import signalboy.custom.*?>
+
+<AnchorPane prefHeight="326.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signalboy.MainController">
+   <children>
+      <MenuBar fx:id="menuBar" layoutY="2.0" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <Menu fx:id="menuNew" mnemonicParsing="false" text="New" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem fx:id="menuItemClose" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+            <!--<Menu mnemonicParsing="false" text="Help">
+                <items>
+                    <MenuItem fx:id="menuItemDemo" mnemonicParsing="false" text="Demo on Youtube" />
+                    <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" text="About" />
+                </items>
+            </Menu>-->
+        </menus>
+      </MenuBar>
+      <ToolBar layoutY="27.0" prefHeight="40.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <items>
+            <Label prefHeight="17.0" prefWidth="22.0" text="RX" />
+            <ComboBox fx:id="comboAudioSources" prefHeight="25.0" prefWidth="185.0" />
+            <Canvas fx:id="canvasVolume" height="20.0" width="100.0" />
+            <Separator orientation="VERTICAL" prefHeight="0.0" prefWidth="0.0" />
+            <Label layoutX="10.0" layoutY="17.0" prefHeight="17.0" prefWidth="21.0" text="TX" />
+            <ComboBox fx:id="comboAudioOutput" layoutX="42.0" layoutY="13.0" prefHeight="25.0" prefWidth="185.0" />
+            <Button fx:id="buttonStop" mnemonicParsing="false" text="STOP" />
+            <Canvas fx:id="canvasOutputVolume" height="20.0" layoutX="231.0" layoutY="15.0" width="100.0" />
+         </items>
+      </ToolBar>
+      <SplitPane dividerPositions="0.5" layoutY="66.0" orientation="VERTICAL" prefHeight="201.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="66.0">
+        <items>
+          <AnchorPane maxHeight="151.0" minHeight="0.0" minWidth="0.0" prefHeight="151.0" prefWidth="598.0">
+               <children>
+                  <ResizableCanvas fx:id="canvasFFT" height="200.0" width="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="CROSSHAIR" />
+                     </cursor>
+                  </ResizableCanvas>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TabPane fx:id="tabPaneDecoders" prefHeight="200.0" prefWidth="698.0" tabClosingPolicy="ALL_TABS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+
+    <stylesheets>
+        <URL value="@dark.css" />
+    </stylesheets>
+
+</AnchorPane>
