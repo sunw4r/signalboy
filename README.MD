@@ -5,7 +5,7 @@ Signal Boy is a personal JavaFX project to help me understand digital signal pro
 
 Releases
 -------
-There's currently no releases as the code is a little messy, buggy and it is very early in life. :-P
+https://github.com/sunw4r/signalboy/releases
 
 Dependencies
 -------
